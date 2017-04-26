@@ -18,6 +18,7 @@
 		FB3D16901EAB4D3900094299 /* EventLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D168E1EAB4D3900094299 /* EventLine.swift */; };
 		FB3D16921EAB4D9500094299 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D16911EAB4D9500094299 /* EventTableViewController.swift */; };
 		FB3D16941EAB5BEE00094299 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D16931EAB5BEE00094299 /* EventTableViewCell.swift */; };
+		FB5C30821EB08EAE00EED839 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C30811EB08EAE00EED839 /* EventDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FB3D168E1EAB4D3900094299 /* EventLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLine.swift; sourceTree = "<group>"; };
 		FB3D16911EAB4D9500094299 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		FB3D16931EAB5BEE00094299 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		FB5C30811EB08EAE00EED839 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +109,10 @@
 			children = (
 				FB3D165E1EAB4D0C00094299 /* AppDelegate.swift */,
 				FB3D16601EAB4D0C00094299 /* ViewController.swift */,
-				FB3D16621EAB4D0C00094299 /* Main.storyboard */,
+				FB5C30811EB08EAE00EED839 /* EventDetailViewController.swift */,
 				FB3D16931EAB5BEE00094299 /* EventTableViewCell.swift */,
 				FB3D16911EAB4D9500094299 /* EventTableViewController.swift */,
+				FB3D16621EAB4D0C00094299 /* Main.storyboard */,
 				FB3D16651EAB4D0C00094299 /* Assets.xcassets */,
 				FB3D16671EAB4D0C00094299 /* LaunchScreen.storyboard */,
 				FB3D168C1EAB4D3900094299 /* Model */,
@@ -284,6 +287,7 @@
 				FB3D16611EAB4D0C00094299 /* ViewController.swift in Sources */,
 				FB3D168F1EAB4D3900094299 /* Event.swift in Sources */,
 				FB3D165F1EAB4D0C00094299 /* AppDelegate.swift in Sources */,
+				FB5C30821EB08EAE00EED839 /* EventDetailViewController.swift in Sources */,
 				FB3D16921EAB4D9500094299 /* EventTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +535,7 @@
 				FB3D16851EAB4D0C00094299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB3D16861EAB4D0C00094299 /* Build configuration list for PBXNativeTarget "ManagementEventTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +544,7 @@
 				FB3D16881EAB4D0C00094299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB3D16891EAB4D0C00094299 /* Build configuration list for PBXNativeTarget "ManagementEventUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +553,7 @@
 				FB3D168B1EAB4D0C00094299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

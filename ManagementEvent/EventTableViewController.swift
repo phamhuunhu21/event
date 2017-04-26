@@ -23,8 +23,7 @@ class EventTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        navigationItem.rightBarButtonItem = editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,4 +64,34 @@ class EventTableViewController: UITableViewController {
         }
     }
 
+    
+    //Sort event trong table view
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let eventLine = eventLines[sourceIndexPath.section]
+        let event = eventLine.events[sourceIndexPath.row]
+        eventLine.events.remove(at: sourceIndexPath.row)
+        let evenLineDes = eventLines[destinationIndexPath.section]
+        evenLineDes.events.insert(event, at: destinationIndexPath.row)
+    }
+    
+    //Hien thi detail cua event
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            switch identifier {
+                case "Show Detail":
+                    let eventDetailVC = segue.destination as! EventDetailViewController
+                    if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
+                        eventDetailVC.event = eventAtIndexPath(indexPath: indexPath as NSIndexPath)
+                    }
+                default: break
+                
+            }
+        }
+    }
+    
+    func eventAtIndexPath(indexPath: NSIndexPath) -> Event{
+        let eventLine = eventLines[indexPath.section]
+        return eventLine.events[indexPath.row]
+    }
+    
 }
